@@ -18,32 +18,34 @@ function App() {
   };
   document.body.style.background = color;
   return (
-    <div className="wrapper">
-      <div className="quote-box">
-        <i class="fa-solid fa-quote-left" style={{ color: color }}></i>
-        <span className="quote-text" style={{ color: color }}>
-          {Quote.quote}
-        </span>
-        <div className="quote-authore" style={{ color: color }}>
-          - {Quote.author}
-        </div>
-        <div className="buttons">
-          <div className="button" id="tweet-quote">
-            <a
-              className="fa-brands fa-square-twitter"
-              target={"_top"}
-              href={link}
-              style={{ color: color }}
-            ></a>
+    <div className="flex-container">
+      <div className="wrapper">
+        <div className="quote-box">
+          <i class="fa-solid fa-quote-left" style={{ color: color }}></i>
+          <span className="quote-text" style={{ color: color }}>
+            {Quote.quote}
+          </span>
+          <div className="quote-authore" style={{ color: color }}>
+            - {Quote.author}
           </div>
-          <button
-            className="button"
-            id="new-quote"
-            style={{ background: color }}
-            onClick={() => handelClick()}
-          >
-            new quote
-          </button>
+          <div className="buttons">
+            <div className="button" id="tweet-quote">
+              <a
+                className="fa-brands fa-square-twitter"
+                target={"_top"}
+                href={link}
+                style={{ color: color }}
+              ></a>
+            </div>
+            <button
+              className="button"
+              id="new-quote"
+              style={{ background: color }}
+              onClick={() => handelClick()}
+            >
+              new quote
+            </button>
+          </div>
         </div>
       </div>
     </div>
