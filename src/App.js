@@ -1,7 +1,7 @@
 import "./App.css";
 import quote_author from "./quote_data";
 import _color from "./colour_data";
-import { useState, useRef } from "react";
+import { useState } from "react";
 function App() {
   const [Quote, setQuote] = useState(quote_author[0]);
   const [link, setLink] = useState(
