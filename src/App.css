@@ -18,19 +18,19 @@
   border-radius: 5px;
 }
 
-.quote-text {
+#text {
   text-align: center;
   font-size: large;
   margin: 10px;
   margin-right: 20px;
 }
 
-.quote-box i {
+#quote-box i {
   font-size: 32px;
   margin-right: 0.4em;
 }
 
-.quote-authore {
+#author {
   text-align: end;
   margin: 20px;
 }
